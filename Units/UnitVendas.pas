@@ -49,7 +49,7 @@ var
 begin
   Comando := 'DELETE FROM vendas v ' +
              'WHERE NOT EXISTS ( ' +
-				     '                  SELECT 1 ' +
+			 '                  SELECT 1 ' +
              '                  FROM ( ' +
              '                        SELECT v2.idcliente ' +
              '                        FROM vendas v2 ' +
@@ -107,7 +107,7 @@ begin
             '        	           AND ca2.modelo = ''Marea'' ' +
             '                  GROUP BY v2.idcliente ' +
             '                  HAVING COUNT(*) >= 2  ' +
-            '                 ) ' + //Caso tenha comprado dois carros do modelo Marea est· desclassificado
+            '                 ) ' + //Caso tenha comprado dois carros do modelo Marea est√° desclassificado
             'ORDER BY v.data_venda ASC ' +
             'LIMIT 15; '; //Considerando apenas os 15 primeiros registros
 end;
@@ -133,4 +133,5 @@ begin
 end;
 
 end.
+
 
