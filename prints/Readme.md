@@ -1,1 +1,1 @@
-Criando para prints para imagens do projeto
+Criando pasta para imagens do projeto
